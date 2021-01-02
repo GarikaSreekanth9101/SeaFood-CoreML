@@ -13,6 +13,7 @@
 		0B04543D25A0662F00B277AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B04543B25A0662F00B277AC /* Main.storyboard */; };
 		0B04543F25A0663100B277AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B04543E25A0663100B277AC /* Assets.xcassets */; };
 		0B04544225A0663100B277AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B04544025A0663100B277AC /* LaunchScreen.storyboard */; };
+		0B04544A25A0667000B277AC /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0B04544925A0667000B277AC /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0B04543E25A0663100B277AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B04544125A0663100B277AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B04544325A0663100B277AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B04544925A0667000B277AC /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				0B04543525A0662F00B277AC /* AppDelegate.swift */,
 				0B04543725A0662F00B277AC /* SceneDelegate.swift */,
-				0B04543925A0662F00B277AC /* ViewController.swift */,
-				0B04543B25A0662F00B277AC /* Main.storyboard */,
-				0B04543E25A0663100B277AC /* Assets.xcassets */,
-				0B04544025A0663100B277AC /* LaunchScreen.storyboard */,
+				0BB0CB9225A0D77000D3C4F9 /* Controller */,
+				0BB0CB9325A0D78A00D3C4F9 /* View */,
+				0BB0CB9425A0D79E00D3C4F9 /* Resources */,
 				0B04544325A0663100B277AC /* Info.plist */,
 			);
 			path = "SeaFood-CoreML";
+			sourceTree = "<group>";
+		};
+		0BB0CB9225A0D77000D3C4F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B04543925A0662F00B277AC /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0BB0CB9325A0D78A00D3C4F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B04543B25A0662F00B277AC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BB0CB9425A0D79E00D3C4F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B04543E25A0663100B277AC /* Assets.xcassets */,
+				0B04544025A0663100B277AC /* LaunchScreen.storyboard */,
+				0B04544925A0667000B277AC /* Inceptionv3.mlmodel */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B04543A25A0662F00B277AC /* ViewController.swift in Sources */,
+				0B04544A25A0667000B277AC /* Inceptionv3.mlmodel in Sources */,
 				0B04543625A0662F00B277AC /* AppDelegate.swift in Sources */,
 				0B04543825A0662F00B277AC /* SceneDelegate.swift in Sources */,
 			);
